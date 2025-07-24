@@ -19,6 +19,14 @@
 
 /* Shared CSS */
 
+.hide{
+    display: none;
+}
+
+body{
+    background-color: #f5f8ff;
+}
+
 .display-flex{
     display: flex;
 }
@@ -29,15 +37,21 @@
 }
 
 .btn-primary{
+    width: 100%;
+    font-size: 1rem;
     background-color: #E95A08;
     color: white;
-    padding: 19px 80px;
+    padding: 26px 50px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* Nav styles */
 
 .brand-name img{
     width: 100%;
+    cursor: pointer;
 }
 
 nav{
@@ -107,6 +121,64 @@ nav a{
 }
 
 
+/* Our Plants styes */
+
+.plants-title{
+    font-size: 3.13rem;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+
+.plants-title span{
+    color: #E95A08;
+}
+
+.plants-description{
+    font-size: 1.38rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 888px;
+    margin: auto;
+    margin-bottom: 49px;
+    line-height: auto;
+}
+
+.card{
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-title{
+    font-size: 1.40rem;
+    color: #111111;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card-price{
+    font-size: 1.40rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+
+
+
+
 /* responsive media query */
 
 @media screen and (max-width:576px) {
@@ -127,6 +199,10 @@ nav a{
     margin-top: 0;
     }
 
+    .header-container{
+        margin-bottom: 65px;
+    }
+
     .header-section{
         padding: 0 16px;
     }
@@ -139,6 +215,27 @@ nav a{
 
     .section-description{
         font-size: 0.88rem;
+    }
+
+    /* Our plants section */
+
+    .plants-title{
+        font-size: 1.50rem;
+    }
+
+    .plants-description{
+        font-size: 0.88rem;
+        width: 336px;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 16px;
+        margin-bottom: 40px;
+    }
+
+    .btn-primary{
+        padding: 16px 20px;
     }
 
     
