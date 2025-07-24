@@ -70,7 +70,41 @@ nav a{
 
 /* header styes */
 
+.header-container{
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px auto;
+}
 
+.header-container div{
+    max-width: 570px
+}
+
+.section-title{
+    max-width: 517px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.section-title span{
+    color: #E95A08;
+}
+
+.section-description{
+    font-size: 1.34rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header-container div{
+    margin-top: 100px;
+}
+
+.header-container div img{
+    width: 100%;
+}
 
 
 /* responsive media query */
@@ -82,4 +116,30 @@ nav a{
     #add-to-cart{
         width: 110px;
     }
+
+    /* header section */
+
+    .header-container{
+        flex-direction: column-reverse;
+    }
+
+    .header-container div{
+    margin-top: 0;
+    }
+
+    .header-section{
+        padding: 0 16px;
+    }
+
+    .section-title{
+        font-size: 1.50rem;
+        width: 250px;
+        margin-bottom: 16px;
+    }
+
+    .section-description{
+        font-size: 0.88rem;
+    }
+
+    
 }
