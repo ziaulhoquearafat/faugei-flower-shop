@@ -123,6 +123,8 @@ nav a{
 
 /* Our Plants styes */
 
+
+
 .plants-title{
     font-size: 3.13rem;
     color: black;
@@ -159,6 +161,7 @@ nav a{
     color: #111111;
     font-weight: 500;
     margin-top: 20px;
+    line-height: 0;
 }
 
 .card-price{
@@ -173,10 +176,49 @@ nav a{
     justify-content: center;
     column-gap: 20px;
     row-gap: 30px;
+    margin-bottom: 200px;
 }
 
+/* Flower Store Styles */
 
+.flower-store-img-section{
+    position: relative;
+}
 
+#store-image{
+    width: 100%;
+}
+
+#trusted{
+    max-width: 286px;
+    position:absolute;
+    left: 390px;
+    top: -140px;
+}
+
+.flower-store{
+    gap: 150px;
+    margin-bottom: 130px;
+}
+
+.flower-store-details{
+    max-width: 540px;
+}
+
+.store-title{
+    font-size: 3.13rem;
+    font-weight: 700;
+    color: black;
+}
+
+.store-description{
+    font-size: 1.40rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.store-description li{
+    margin-bottom: 20px;
+}
 
 
 /* responsive media query */
@@ -234,8 +276,37 @@ nav a{
         margin-bottom: 40px;
     }
 
+    .card-title{
+        font-size: 1rem;
+        line-height: 0;
+        margin-bottom: 10px;
+    }
+
+    .card-price{
+        font-size: 1rem;
+    }
+
     .btn-primary{
         padding: 16px 20px;
+    }
+
+    /* Flower Store */
+
+    .flower-store{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    #img-trusted{
+        display: none;
+    }
+
+    .store-title{
+        font-size: 1.50rem;
+    }
+
+    .store-description{
+        font-size: 0.88rem;
     }
 
     
