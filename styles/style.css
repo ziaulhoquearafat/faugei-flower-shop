@@ -17,3 +17,69 @@
     "wdth" 100;
 }
 
+/* Shared CSS */
+
+.display-flex{
+    display: flex;
+}
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    padding: 19px 80px;
+}
+
+/* Nav styles */
+
+.brand-name img{
+    width: 100%;
+}
+
+nav{
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #8987A1;
+    font-size: 1rem;
+}
+
+#home{
+    font-weight: 700;
+    color: #252432;
+}
+
+#add-to-cart{
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+}
+
+/* header styes */
+
+
+
+
+/* responsive media query */
+
+@media screen and (max-width:576px) {
+    nav ul a{
+        display: none;
+    }
+    #add-to-cart{
+        width: 110px;
+    }
+}
